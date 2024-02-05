@@ -1,4 +1,4 @@
-package com.example.demo;
+package com.example.demo.controllers;
 
 import lombok.Getter;
 import lombok.Setter;
@@ -12,5 +12,5 @@ public class XkcdComic {
     private String end_date;
     private int count;
     private int thumbs;
-    private String api_key;  
+    private String api_key = "RzyFxHkZBTcmrc4kefhp7pgaF0PCCmxggWzjA76P";  
 }
