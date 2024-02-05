@@ -11,6 +11,6 @@ public class XkcdComic {
     private String start_date;
     private String end_date;
     private int count;
-    private int thumbs;
+    private boolean thumbs = false;
     private String api_key = "RzyFxHkZBTcmrc4kefhp7pgaF0PCCmxggWzjA76P";  
 }

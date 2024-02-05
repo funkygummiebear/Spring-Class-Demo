@@ -11,7 +11,7 @@ public class XKCDController {
 @RequestMapping
     @GetMapping("/xkcd")
     public XkcdComic xkcdComic(){
-        System.out.println("Hello and Welcome");
+        System.out.println("Hello and Welcome to NASA Astronomy Picture of the Day");
         RestTemplate restTemplate = new RestTemplate();
         XkcdComic result = restTemplate.getForObject("https://api.nasa.gov/planetary/apod?api_key=RzyFxHkZBTcmrc4kefhp7pgaF0PCCmxggWzjA76P", XkcdComic.class);
         return result;
@@ -20,7 +20,7 @@ public class XKCDController {
     @GetMapping("/xkcd/{comicNumber}")
     public XkcdComic xkcdComicPast(@PathVariable String comicNumber){
         RestTemplate restTemplate = new RestTemplate();
-        XkcdComic result = restTemplate.getForObject("https://xkcd.com/" + comicNumber + "/info.0.json", XkcdComic.class);
+        XkcdComic result = restTemplate.getForObject("https://api.nasa.gov/planetary/apod?api_key=RzyFxHkZBTcmrc4kefhp7pgaF0PCCmxggWzjA76P" + comicNumber + "/info.0.json", XkcdComic.class);
         return result;
     }
 }
