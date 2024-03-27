@@ -5,7 +5,7 @@ import lombok.Setter;
 
 @Getter
 @Setter
-public class XkcdComic {
+public class Xkcd {
     private String date;
     private String explanation;
     private String start_date;
